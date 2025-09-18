@@ -25,7 +25,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pytest pytest-cov
+        pip install pytest pytest-cov sqlalchemy fastapi pydantic httpx python-jose passlib
 
     - name: Run Assignment 4 tests
       run: |
@@ -50,7 +50,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pytest
+        pip install pytest sqlalchemy fastapi pydantic httpx python-jose passlib
 
     - name: Run security tests
       run: |
